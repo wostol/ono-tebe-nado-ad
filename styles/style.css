@@ -2,15 +2,15 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: start;
-    padding: 0; 
+    padding: 0;
     margin-bottom: 96px;
     position: relative;
 }
 
 .header__menu {
     justify-self: start;
-    margin-top: 133px; 
-    margin-left: 50px; 
+    margin-top: 133px;
+    margin-left: 50px;
 }
 
 .header__links-list {
@@ -31,9 +31,9 @@
 .header__link {
     font-size: 18px;
     text-transform: lowercase;
-    text-decoration: underline; 
+    text-decoration: underline;
     text-underline-offset: 4px;
-    color: #000;
+    color: #0000;
     padding-bottom: 2px;
 }
 
@@ -43,17 +43,16 @@
 }
 
 .header__link:hover {
-    text-decoration-thickness: 2px; 
+    text-decoration-thickness: 2px;
 }
-
 
 .header__logo {
     display: block;
     width: 148px;
     height: 105px;
     justify-self: center;
-    margin-top: 92px; 
-    margin-left: 2px; 
+    margin-top: 92px;
+    margin-left: 2px;
 }
 
 .header__logo-image {
@@ -70,14 +69,14 @@
     color: inherit;
     margin: 0;
     padding: 0;
-    text-align: left; 
+    text-align: left;
 }
 
 .header__address {
     width: 240px;
     height: 98px;
     max-width: 240px;
-    justify-self: end; 
+    justify-self: end;
     margin-top: 95px;
     margin-right: 50px;
     text-align: left;
@@ -98,6 +97,7 @@
     padding: 0;
     line-height: inherit;
 }
+
 /* COVER SECTION */
 .cover {
     position: relative;
@@ -135,31 +135,30 @@
     margin: 0 50px 135px;
 }
 
-
 .aligned-text {
     display: block;
     text-align: left;
-    letter-spacing: 0.3em; 
+    letter-spacing: 0.3em;
 }
 
 .aligned-text_center {
     display: block;
     text-align: center;
-    letter-spacing: 0.3em; 
+    letter-spacing: 0.3em;
 }
 
 .aligned-text_right {
     display: block;
     text-align: right;
-    letter-spacing: 30px; 
+    letter-spacing: 30px;
 }
 
 .letter-spacing-extended {
-    letter-spacing: 30px; 
+    letter-spacing: 30px;
 }
 
 .no-letter-spacing {
-    letter-spacing: normal; 
+    letter-spacing: normal;
 }
 
 .cover__description {
@@ -179,9 +178,8 @@
     margin: 0;
     padding: 0;
     word-spacing: 18px;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
-
 
 .bet-button {
     background-color: transparent;
@@ -197,7 +195,7 @@
     margin: 0;
     line-height: normal;
     transition: opacity 0.3s ease;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .bet-button:hover {
@@ -217,8 +215,8 @@
 .lots {
     padding: 0 24px;
     margin-bottom: 120px;
-    position: relative; 
-    z-index: 1; 
+    position: relative;
+    z-index: 1;
 }
 
 .lots__heading {
@@ -238,32 +236,28 @@
     margin-bottom: 30px;
     list-style: none;
     padding: 0;
-    
-    height: 596px; 
-    min-height: 450px; 
-    align-items: stretch; 
+    height: 596px;
+    min-height: 450px;
+    align-items: stretch;
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .lots__card-list-item {
     list-style: none;
     margin: 0;
     padding: 0;
-    
-    width: 430px; 
+    width: 430px;
     min-height: 450px;
-    
     flex: 1;
     min-width: 300px;
-    
-    display: flex; 
+    display: flex;
 }
 
 .card-link {
-    display: flex; 
+    display: flex;
     height: 100%;
-    width: 100%; 
+    width: 100%;
     text-decoration: none;
     color: inherit;
     flex: 1;
@@ -272,7 +266,7 @@
 .card {
     position: relative;
     height: 100%;
-    width: 100%; 
+    width: 100%;
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
@@ -313,7 +307,7 @@
     font-weight: 700;
     font-size: 22px;
     text-transform: uppercase;
-    text-decoration: underline; 
+    text-decoration: underline;
     position: relative;
     z-index: 2;
     line-height: 1.2;
@@ -345,25 +339,23 @@
     background-color: #fff;
     width: fit-content;
 }
-/* ABOUT SECTION */
+
 /* ABOUT SECTION */
 .about {
     padding: 35px 24px 0px 71px;
-    margin-bottom: 180px; /* Отступ снизу 35px */
+    margin-bottom: 180px;
     display: grid;
-    grid-template-columns: 240px 1fr; /* Логотип 240px + текст */
-    gap: 72px; /* Расстояние между колонками 35px */
+    grid-template-columns: 240px 1fr;
+    gap: 72px;
     align-items: start;
 }
 
-/* Колонка с логотипом */
 .about__column_logo {
     display: flex;
     justify-content: center;
     align-items: start;
 }
 
-/* Логотип 240×240 */
 .about__logo {
     width: 240px;
     height: 240px;
@@ -427,7 +419,7 @@
     text-transform: lowercase;
     padding-bottom: 2px;
     border-bottom: 1px solid transparent;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .footer__menu-link_active {
@@ -438,7 +430,7 @@
 
 .footer__menu-link:hover {
     border-bottom: 1px solid currentColor;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .footer__social-list {
