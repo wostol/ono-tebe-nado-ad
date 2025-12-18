@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: start;
-    padding: 0; /* Убираем общий padding */
+    padding: 0; 
     margin-bottom: 96px;
     position: relative;
 }
@@ -31,32 +31,29 @@
 .header__link {
     font-size: 18px;
     text-transform: lowercase;
-    text-decoration: underline; /* Все ссылки подчеркнуты */
+    text-decoration: underline; 
     text-underline-offset: 4px;
     color: #000;
     padding-bottom: 2px;
 }
 
-/* Активная ссылка "главная" - без подчеркивания */
 .header__link_active {
     text-decoration: none !important;
     pointer-events: none;
 }
 
-/* При наведении - можно усилить эффект */
 .header__link:hover {
-    text-decoration-thickness: 2px; /* Более жирное подчеркивание */
+    text-decoration-thickness: 2px; 
 }
 
 
-/* Логотип - точное позиционирование как в Figma */
 .header__logo {
     display: block;
     width: 148px;
     height: 105px;
     justify-self: center;
-    margin-top: 92px; /* top: 92px в Figma */
-    margin-left: 2px; /* left: calc(50% - 148px/2 + 2px) */
+    margin-top: 92px; 
+    margin-left: 2px; 
 }
 
 .header__logo-image {
@@ -64,9 +61,7 @@
     height: 100%;
 }
 
-/* Адрес - позиционируем как в Figma */
 .address {
-    /* Сброс стандартных браузерных стилей */
     font-style: normal;
     font-family: 'Raleway';
     font-size: 18px;
@@ -75,27 +70,22 @@
     color: inherit;
     margin: 0;
     padding: 0;
-    text-align: left; /* Выравнивание текста по левому краю */
+    text-align: left; 
 }
 
 .header__address {
-    /* Размеры как в макете */
     width: 240px;
     height: 98px;
     
-    /* Занимает одну фракцию в Grid */
     max-width: 240px;
-    justify-self: end; /* Блок размещается в правой колонке Grid */
+    justify-self: end; 
     
-    /* Отступы для позиционирования */
     margin-top: 95px;
     margin-right: 50px;
-    
-    /* Текст внутри блока выравнивается по левому краю */
+
     text-align: left;
 }
 
-/* Стили для ссылок в адресе */
 .address a {
     text-decoration: underline;
     text-underline-offset: 4px;
@@ -106,7 +96,6 @@
     opacity: 0.8;
 }
 
-/* Параграф с физическим адресом */
 .address p {
     margin: 0;
     padding: 0;
@@ -128,7 +117,6 @@
     justify-content: space-between;
 }
 
-/* Оверлей */
 .overlay {
     position: absolute;
     top: 0;
@@ -139,8 +127,8 @@
     z-index: 1;
 }
 
-/* Заголовок */
 .cover__title {
+    font-family: 'Raleway';
     font-size: 100px;
     font-weight: 700;
     line-height: 1.15;
@@ -148,49 +136,44 @@
     position: relative;
     z-index: 2;
     margin: 0 50px 135px;
-    /*max-width: 1000px; /* Ограничение ширины как в макете */
 }
 
 
 .aligned-text {
     display: block;
     text-align: left;
-    letter-spacing: 0.3em; /* О Н О - правильные интервалы */
+    letter-spacing: 0.3em; 
 }
 
 .aligned-text_center {
     display: block;
     text-align: center;
-    letter-spacing: 0.3em; /* Т Е Б Е - правильные интервалы */
-    line-height: 1.2;
-    margin-top: 0.2em;
+    letter-spacing: 0.3em; 
 }
 
 .aligned-text_right {
     display: block;
     text-align: right;
-    letter-spacing: 30px; /* Уменьшаем с 60px */
-    margin-top: 0.2em;
+    letter-spacing: 30px; 
 }
 
 .letter-spacing-extended {
-    letter-spacing: 30px; /* Уменьшаем с 60px */
+    letter-spacing: 30px; 
 }
 
 .no-letter-spacing {
-    letter-spacing: normal; /* Нормальный интервал */
+    letter-spacing: normal; 
 }
 
 .cover__description {
     display: flex;
-    justify-content: space-between; /* Равномерное распределение */
+    justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 2;
     margin: 0 50px;
 }
 
-/* Подзаголовок с правильными переносами */
 .cover__description-text {
     font-size: 22px;
     text-transform: uppercase;
@@ -199,8 +182,7 @@
     margin: 0;
     padding: 0;
     word-spacing: 18px;
-    letter-spacing: 0.6px;
-    white-space: nowrap; /* Запрещаем перенос */
+    white-space: nowrap; 
 }
 
 
@@ -209,15 +191,16 @@
     border: 1px solid #fff;
     color: #fff;
     font-size: 22px;
-    font-weight: 500;
     text-transform: uppercase;
-    font-family: inherit;
     padding: 12px 32px;
     cursor: pointer;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
     margin: 0;
     line-height: normal;
     transition: opacity 0.3s ease;
-    white-space: nowrap; /* Чтобы текст не переносился */
+    white-space: nowrap; 
 }
 
 .bet-button:hover {
@@ -237,8 +220,8 @@
 .lots {
     padding: 0 24px;
     margin-bottom: 180px;
-    position: relative; /* Создаем контекст для z-index */
-    z-index: 1; /* Базовый z-index для всей секции */
+    position: relative; 
+    z-index: 1; 
 }
 
 .lots__heading {
@@ -247,10 +230,9 @@
     margin-left: 40px;
     margin-bottom: 27px;
     position: relative;
-    z-index: 3; /* Выше карточек */
+    z-index: 3;
 }
 
-/* Список карточек - ИСПРАВЛЯЕМ ВЫСОТУ */
 .lots__card-list {
     display: flex;
     flex-wrap: wrap;
@@ -259,48 +241,40 @@
     list-style: none;
     padding: 0;
     
-    /* УБИРАЕМ ОГРАНИЧЕНИЯ ВЫСОТЫ */
-    height: auto; /* Автоматическая высота */
-    min-height: 450px; /* Минимальная высота как у карточек */
-    
-    /* ДЛЯ РАСТЯЖЕНИЯ */
-    align-items: stretch; /* Растягиваем карточки по высоте */
+    height: auto; 
+    min-height: 450px; 
+    align-items: stretch; 
     position: relative;
-    z-index: 2; /* Выше фона, но ниже заголовка и ссылки */
+    z-index: 2; 
 }
 
-/* Элемент списка - каждая карточка */
 .lots__card-list-item {
     list-style: none;
     margin: 0;
     padding: 0;
     
-    width: 430px; /* Или flex: 1 для адаптивности */
+    width: 430px; 
     min-height: 450px;
     
     flex: 1;
     min-width: 300px;
     
-    /* ДЛЯ ПРАВИЛЬНОГО РАСТЯЖЕНИЯ */
-    display: flex; /* Добавляем flex */
+    display: flex; 
 }
 
 .card-link {
-    display: flex; /* Меняем block на flex */
+    display: flex; 
     height: 100%;
-    width: 100%; /* Добавляем ширину */
+    width: 100%; 
     text-decoration: none;
     color: inherit;
-    
-    /* Для растяжения */
     flex: 1;
 }
 
-/* Карточка */
 .card {
     position: relative;
     height: 100%;
-    width: 100%; /* Добавляем ширину */
+    width: 100%; 
     padding: 48px 40px;
     
     display: flex;
@@ -313,8 +287,6 @@
     background-repeat: no-repeat;
     
     text-decoration: none;
-    
-    /* Для растяжения */
     flex: 1;
 }
 
@@ -381,7 +353,7 @@
 }
 /* ABOUT SECTION */
 .about {
-    padding: 0 50px;
+    padding: 0 24px;
     margin-bottom: 180px;
     display: grid;
     grid-template-columns: 430px 1fr;
@@ -466,6 +438,7 @@
 
 .footer__menu-link:hover {
     border-bottom: 1px solid currentColor;
+    text-decoration: none; 
 }
 
 .footer__social-list {
