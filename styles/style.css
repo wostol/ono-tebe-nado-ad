@@ -76,13 +76,10 @@
 .header__address {
     width: 240px;
     height: 98px;
-    
     max-width: 240px;
     justify-self: end; 
-    
     margin-top: 95px;
     margin-right: 50px;
-
     text-align: left;
 }
 
@@ -277,16 +274,13 @@
     height: 100%;
     width: 100%; 
     padding: 48px 40px;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     color: #fff;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
     text-decoration: none;
     flex: 1;
 }
@@ -349,14 +343,13 @@
     position: relative;
     z-index: 10;
     background-color: #fff;
-    padding: 10px 15px;
     width: fit-content;
 }
 /* ABOUT SECTION */
 /* ABOUT SECTION */
 .about {
-    padding: 35px 24px 0 24px; /* 35px сверху, 50px по бокам */
-    margin-bottom: 35px; /* Отступ снизу 35px */
+    padding: 35px 24px 0px 71px;
+    margin-bottom: 180px; /* Отступ снизу 35px */
     display: grid;
     grid-template-columns: 240px 1fr; /* Логотип 240px + текст */
     gap: 72px; /* Расстояние между колонками 35px */
